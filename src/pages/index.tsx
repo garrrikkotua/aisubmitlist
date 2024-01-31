@@ -72,7 +72,7 @@ export default function Home() {
       >
         <section className="">
           <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[85%_15%] w-full">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[60%_40%] w-full">
               <div className="w-full">
                 <p className="sm:text-3xl text-lg font-semibold tracking-wider">
                   {APP_NAME}
@@ -102,6 +102,15 @@ export default function Home() {
                 >
                   See Top AI directories →
                 </Button>
+              </div>
+              <div className="pt-20 w-full mx-auto hidden sm:block">
+                <Image
+                  src="/lib.png"
+                  alt="AI Submit List"
+                  width={800}
+                  height={800}
+                  className="rounded-xl"
+                />
               </div>
             </div>
           </div>
@@ -138,137 +147,6 @@ export default function Home() {
                 >
                   Get full access →
                 </Button>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="pt-20 sm:pt-48" id="pricing">
-          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="w-full">
-              <p className="sm:text-3xl text-lg font-semibold tracking-wider">
-                ▶︎ Pricing
-              </p>
-              <div className="flex flex-row w-full items-center">
-                <h2 className="mt-4 text-2xl font-bold text-black lg:mt-14 sm:text-5xl xl:text-[64px] max-w-5xl">
-                  Get access to 100+ AI directories and newsletters right now
-                </h2>
-              </div>
-            </div>
-            <div className="flex flex-row justify-start pt-8">
-              <Card price={29} url={CHECKOUT_URL_STARTER} />
-            </div>
-          </div>
-        </section>
-        <section className="pt-20 sm:pt-48" id="faq">
-          <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-[65%_35%] w-full">
-              <div className="w-full">
-                <div className="max-w-3xl">
-                  <p className="sm:text-3xl text-lg font-semibold tracking-wider">
-                    ▶︎ FAQ
-                  </p>
-                  <h2 className="mt-4 text-2xl font-bold text-black lg:mt-14 sm:text-5xl xl:text-[64px]">
-                    Answers to common questions about LogoPicture AI
-                  </h2>
-                  <Image
-                    src="/faq.png"
-                    alt="Optical Illusion FAQ"
-                    width="500"
-                    height="500"
-                    className="pt-4 sm:hidden rounded-3xl"
-                  />
-                </div>
-                <div className="pt-8 max-w-2xl">
-                  <Accordion
-                    type="single"
-                    collapsible
-                    className="text-xl sm:text-2xl"
-                  >
-                    <AccordionItem value="item-2">
-                      <AccordionTrigger>
-                        What type of logo should I upload?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        We strongly recommend uploading a logo with a white
-                        background and a square (1:1) ratio. The simplest
-                        versions of the logo work best - black and white, or one
-                        color. Background shouldnt be transparent. If you have a
-                        logo with a transparent background, please add a white
-                        background before uploading.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-3">
-                      <AccordionTrigger>
-                        How long does it take to get the results?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        Pictures are generated within a few minutes. You will
-                        receive them via email once they are ready.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-4">
-                      <AccordionTrigger>
-                        I need more pictures. Can I buy more credits?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        Yes, you can purchase any plan multiple times. For
-                        instance, if you require 1000 pictures, you can purchase
-                        two 500-picture plans. All will be added to your
-                        account. Please note that your account is associated
-                        with your email. Therefore, if you purchase a plan using
-                        a different email, you will need to log in with that
-                        email to access your credits.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-5">
-                      <AccordionTrigger>
-                        What output formats do you support?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        All output pictures are in PNG format. Currently, all
-                        the pictures generated are in a 1:1 ratio and have a
-                        resolution of 768x768.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-6">
-                      <AccordionTrigger>
-                        What if I don&apos;t like the results?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        Plesase{" "}
-                        <a
-                          href="mailto:kotuaigor@gmail.dom"
-                          className="underline"
-                        >
-                          reach out to us
-                        </a>{" "}
-                        and we will help you to get the best results.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-center">
-                        Do you offer refunds?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        Yes, we offer a 7-day money-back guarantee for the
-                        Starter plan. Refunds are not available for other plans.
-                        However, if you are unsatisfied with the results, please
-                        contact us and we will assist you in achieving the best
-                        results.
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem value="item-7">
-                      <AccordionTrigger>
-                        What payment methods do you support?
-                      </AccordionTrigger>
-                      <AccordionContent className="text-xl">
-                        We accept all major credit cards, PayPal, Apple Pay,
-                        Google Pay, Alipay, WeChat Pay, and bank debits (ACH).
-                        All transactions are processed by LemonSqueezy MoR.
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
               </div>
             </div>
           </div>

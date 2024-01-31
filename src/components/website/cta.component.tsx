@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export const CTA = () => {
   return (
-    <section className="pt-20 sm:pt-48 sm:py-16 lg:py-20">
-      <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <section className="pt-20 sm:pt-48 sm:py-16 lg:py-20 mx-auto">
+      {/* <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="absolute -inset-4">
           <div className="w-full h-full mx-auto opacity-30 blur-lg filter"></div>
         </div>
@@ -84,7 +84,19 @@ export const CTA = () => {
             </Button>
           </div>
         </div>
-      </div>
+      </div> */}
+      <h2 className="text-5xl font-semibold text-center pb-10">
+        Subscribe to our AI newsletter to get full access to AI Submit List 👇
+      </h2>
+      <iframe
+        src="https://igorkotua.substack.com/embed"
+        width="100%"
+        height="320"
+        style={{ border: "1px solid #EEE", background: "black" }}
+        className="text-center mx-auto"
+        frameBorder="0"
+        scrolling="no"
+      ></iframe>
     </section>
   );
 };

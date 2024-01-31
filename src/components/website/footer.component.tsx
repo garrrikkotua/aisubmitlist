@@ -12,8 +12,7 @@ export const Footer = () => {
             </p>
 
             <p className="text-base leading-relaxed text-gray-600 mt-7">
-              Beautiful AI pictures with your logo for your website, social
-              media, and more.
+              #1 List of AI Directories and Newsletters to launch your AI
             </p>
 
             <ul className="flex items-center space-x-3 mt-9">
@@ -118,43 +117,21 @@ export const Footer = () => {
             <ul className="mt-6 space-y-4">
               <li>
                 <Link
-                  href="/gallery"
+                  href="/logopictureai.com"
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Gallery{" "}
+                  LogoPictureAI{" "}
                 </Link>
               </li>
 
               <li>
                 <Link
-                  href="/blog"
+                  href="/cliplama.com"
                   className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                 >
                   {" "}
-                  Blog{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="/#pricing"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                >
-                  {" "}
-                  Pricing{" "}
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="/#faq"
-                  title=""
-                  className="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                >
-                  {" "}
-                  Frequently Asked Questions{" "}
+                  ClipLama{" "}
                 </Link>
               </li>
 
@@ -171,7 +148,7 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
               Legal
             </p>
@@ -210,7 +187,7 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* <div>
             <p className="text-sm font-semibold tracking-widest text-gray-400 uppercase">
@@ -331,7 +308,7 @@ export const Footer = () => {
         <hr className="mt-16 mb-10 border-gray-200" />
 
         <p className="text-sm text-center text-gray-600">
-          © 2023 {APP_NAME}, made by{" "}
+          © 2024 {APP_NAME}, made by{" "}
           <a href="https://twitter.com/garrrikkotua" className="font-semibold">
             @garrrikkotua
           </a>
